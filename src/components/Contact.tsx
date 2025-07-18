@@ -21,7 +21,7 @@ const social =[
 
 const Contact = () => {
   return (
-    <div className="py-2 px-16 flex flex-col max-w-7xl mx-auto gap-3 items-center" id="contact">
+    <div className="py-2 lg:px-16 flex flex-col max-w-7xl mx-auto gap-3 items-center" id="contact">
     <h2 className="text-5xl font-bold mb-12 text-center text-gradiant max-md:3xl">Contact</h2>
       {
         social.map((item, index) => (

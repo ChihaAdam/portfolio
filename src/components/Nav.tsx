@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 
 function Nav() {
   return (
-    <nav className="bg-[#161b2299] text-[#c9d1d9] py-5 px-6 sticky top-0 z-50 shadow-lg backdrop-blur-sm bg-opacity-90 max">
+    <nav className="bg-[#161b2299] text-[#c9d1d9] py-5 px-6 sticky top-0 z-50 shadow-lg lg:backdrop-blur-sm bg-opacity-90 max">
       <div className="container mx-auto flex justify-between items-center max-md:flex-col">
         <div className="text-2xl font-bold">
           <Link

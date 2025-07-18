@@ -20,7 +20,7 @@ const skills = [
 function Skills() {
   return (
     <div
-      className="py-16 px-2 max-w-7xl mx-auto"
+      className="lg:py-16 px-2 max-w-7xl mx-auto"
       id="skills"
     >
       <h2 className="text-5xl font-bold mb-12 text-center text-gradiant max-md:3xl">
