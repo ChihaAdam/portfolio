@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50%) scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-[#0d1117] text-[#c9d1d9] font-sans;
+  }
+}
+
+@layer utilities{
+  .text-gradiant{
+    @apply bg-clip-text p-4 text-transparent bg-gradient-to-r from-[#ff0080] via-[#7928ca] to-[#007cf0];
+  }
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  .link {
+    @apply hover:text-[#ff0080] transition-colors duration-300 cursor-pointer select-none;
+  }
+  .animate-on-scroll {
+    opacity: 0;
+    animation: slideIn 1s linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  .animate-spin-slow {
+    animation: spin 3s linear infinite;
+  }
+}

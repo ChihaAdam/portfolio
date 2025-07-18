@@ -1,0 +1,23 @@
+[
+  {
+    "title": "apiTester",
+    "description": "API Tester is a simple web application built with React and TypeScript that allows users to test RESTful API endpoints directly from their browser. Its design is minimal and user-friendly, enabling quick requests and response inspection for developers who need a lightweight API testing tool.",
+    "demo": "https://api-tester-pink.vercel.app/",
+    "repository": "https://github.com/ChihaAdam/apiTester",
+    "snapshot": "./snapshots/apiTester.png"
+  },
+  {
+    "title": "simple to do app",
+    "description": "a simple task manager that uses localstorage to store tasks . you can add . update and complete tasks . you can sort and search in the list of tasks . there is a data visualisation section . it has custom themes and supports dark mode",
+    "demo": "https://simple-to-do-app-phi.vercel.app/",
+    "repository": "https://github.com/ChihaAdam/simple-to-do-app",
+    "snapshot": "./snapshots/todo.png"
+  },
+  {
+    "title":"country quiz app",
+    "description":"that was a challenge from devchallenges.io with purpose of testing your knowledge about countries . it fetches questions from an api and displays in in a nice ui and dependent on your answers it shows you finally your result . nice practise complex state management and tanstack query library",
+    "demo":"https://country-quiz-app-delta.vercel.app/",
+    "repository":"https://github.com/ChihaAdam/country-quiz-app",
+    "snapshot":"./snapshots/countryQuiz.png"
+  }
+]
