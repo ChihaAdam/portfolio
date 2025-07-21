@@ -1,9 +1,9 @@
 import { Link } from "react-scroll";
-
+import BurgerMenu from "./BurgerMenu";
 function Nav() {
   return (
-    <nav className="bg-[#161b2299] text-[#c9d1d9] py-5 px-6 sticky top-0 z-50 shadow-lg lg:backdrop-blur-sm bg-opacity-90 max">
-      <div className="container mx-auto flex justify-between items-center max-md:flex-col">
+    <nav className="bg-[#161b2299] text-[#c9d1d9] py-5 px-6 sticky top-0 z-50 shadow-lg lg:backdrop-blur-sm bg-opacity-90">
+      <div className="container mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold">
           <Link
             to="home"
@@ -14,7 +14,7 @@ function Nav() {
             My Portfolio
           </Link>
         </div>
-        <ul className="flex space-x-8 max-md:flex-col max-md:text-center ">
+        <ul className="flex space-x-8 max-md:hidden ">
           {["skills", "projects", "contact"].map((item) => (
             <li key={item} className="max-md:m-0">
               <Link
@@ -28,6 +28,7 @@ function Nav() {
             </li>
           ))}
         </ul>
+        <BurgerMenu />
       </div>
     </nav>
   );
