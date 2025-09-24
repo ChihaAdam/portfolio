@@ -1,5 +1,5 @@
 import CountUp from "react-countup";
-import Avatar from "./Avatar";
+import Avatar from "../Avatar";
 interface IntroProps {
   bio: string;
   avatar: string;

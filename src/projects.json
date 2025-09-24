@@ -19,5 +19,12 @@
     "demo":"https://country-quiz-app-delta.vercel.app/",
     "repository":"https://github.com/ChihaAdam/country-quiz-app",
     "snapshot":"./snapshots/countryQuiz.png"
+  },
+  {
+    "title":"fullstack todo app",
+    "description":"my first fullstack project . created with MERN stack and uses JWT for authentication . it has a user authentication system . users can create . update and delete their tasks . it has a dark mode and custom themes",
+    "demo":"https://fullstack-to-do-list-2w75.vercel.app/",
+    "repository":"https://github.com/ChihaAdam/fullstack-to-do-list",
+    "snapshot":"./snapshots/fullstackTodo.png"
   }
 ]

@@ -1,4 +1,10 @@
-import type { ProjectDetailsProps } from "./Projects";
+export type ProjectDetailsProps = {
+  title: string,
+  description: string,
+  demo: string,
+  repository: string,
+  snapshot: string
+}
 function ProjectCard({ data }: { data: ProjectDetailsProps }) {
   return (
     <div className="flex flex-col items-center justify-between animate-on-scroll hover:scale-105 transition-all duration-300 cursor-pointer bg-gray-800 rounded-lg p-4 shadow-lg hover:shadow-xl">
