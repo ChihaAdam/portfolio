@@ -1,4 +1,4 @@
-import { Download, Fullscreen, X, XIcon } from "lucide-react"
+import { Download, Fullscreen, XIcon } from "lucide-react"
 import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog"
 import { DialogClose } from "@radix-ui/react-dialog"
 interface CertificateCardProps {

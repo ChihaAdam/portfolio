@@ -1,4 +1,4 @@
-export type ProjectDetailsProps = {
+type ProjectDetailsProps = {
   title: string,
   description: string,
   demo: string,
