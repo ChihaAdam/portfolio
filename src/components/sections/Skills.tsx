@@ -1,5 +1,4 @@
-import Card from "../card";
-
+import SkillCard from "../Skillcard";
 const skills = [
   "html",
   "css",
@@ -11,6 +10,10 @@ const skills = [
   "react-query",
   "redux",
   "shadcn",
+  
+  "nodeJs",
+  "expressJs",
+  "mongodb",
   "git",
   "github",
   "vscode",
@@ -28,7 +31,7 @@ function Skills() {
       </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {skills.map((skill, index) => (
-            <Card key={index} image={`./skills/${skill}.svg`} title={skill} />
+            <SkillCard key={index} image={`./skills/${skill}.svg`} title={skill} />
           ))}
         </div>
     </div>

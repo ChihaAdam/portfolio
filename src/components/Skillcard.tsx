@@ -1,4 +1,4 @@
-function Card({ image, title }: { image: string; title: string }) {
+function SkillCard({ image, title }: { image: string; title: string }) {
   return (
     <div
       className="group flex flex-col items-center bg-gradient-to-br from-white/10 to-white/5 p-6 gap-4 rounded-xl lg:backdrop-blur-sm 
@@ -20,4 +20,4 @@ function Card({ image, title }: { image: string; title: string }) {
   );
 }
 
-export default Card;
+export default SkillCard;
