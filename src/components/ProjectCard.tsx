@@ -13,6 +13,7 @@ function ProjectCard({ data }: { data: ProjectDetailsProps }) {
           src={data.snapshot}
           alt={data.title}
           className=" rounded-md"
+          loading="lazy"
         />
         <h1 className="text-2xl font-bold text-center">{data.title}</h1>
       </div>

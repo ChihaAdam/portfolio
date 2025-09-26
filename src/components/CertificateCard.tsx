@@ -23,7 +23,7 @@ function CertificateCard({ data }: { data: CertificateCardProps }) {
         </a>
         <Dialog>
           <DialogTrigger>
-            <Fullscreen className="icon" />
+            <Fullscreen className="icon max-md:hidden" />
           </DialogTrigger>
           <DialogContent className="bg-gray-800/40 backdrop-blur-sm border-0 min-w-[95vw] h-[95vh] p-4 flex flex-col items-center justify-between " showCloseButton={false}>
             <DialogHeader className="mb-4 flex flex-row items-center justify-between w-full">

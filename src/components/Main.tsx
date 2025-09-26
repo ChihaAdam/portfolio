@@ -4,7 +4,7 @@ import { use } from "react"
 import { FetchGithub } from "../utils/FetchGithub"
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
-import Contact from "./Contact";
+import Contact from "./sections/Contact";
 import Certifications from "./sections/certifications";
 function Main() {
   const {bio,avatar_url,public_repos} = use(FetchGithub);

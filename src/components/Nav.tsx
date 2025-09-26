@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import BurgerMenu from "./BurgerMenu";
 function Nav() {
   return (
-    <nav className="bg-[#161b2299] text-[#c9d1d9] py-5 px-6 sticky top-0 z-50 shadow-lg lg:backdrop-blur-sm bg-opacity-90">
+    <nav className="bg-[#161b2299] max-md:bg-[#161b22] text-[#c9d1d9] py-5 px-6 sticky top-0 z-50 shadow-lg lg:backdrop-blur-sm">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold">
           <Link
@@ -21,7 +21,7 @@ function Nav() {
                 to={item}
                 smooth={true}
                 duration={1000}
-                className="text-[#c9d1d9 transition-colors capitalize text-lg font-medium cursor-pointer relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full link"
+                className="text-[#c9d1d9] transition-colors capitalize text-lg font-medium cursor-pointer relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full link"
               >
                 {item}
               </Link>

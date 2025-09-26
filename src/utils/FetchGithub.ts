@@ -13,4 +13,12 @@ export const FetchGithub = Promise.all([
     ...userData,
     total_stars: starredRepos.length
   };
+}).catch((error) => {
+  console.error("Error fetching GitHub data:", error);
+  return {
+    avatar_url: "",
+    bio: "",
+    public_repos: 0,
+    total_stars: 0 
+  };
 });

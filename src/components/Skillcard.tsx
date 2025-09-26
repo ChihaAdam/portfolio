@@ -1,11 +1,11 @@
 function SkillCard({ image, title }: { image: string; title: string }) {
   return (
     <div
-      className="group flex flex-col items-center bg-gradient-to-br from-white/10 to-white/5 p-6 gap-4 rounded-xl lg:backdrop-blur-sm 
-      transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] animate-on-scroll cursor-pointer
+      className="group flex flex-col items-center bg-white/10 p-6 gap-4 rounded-xl lg:backdrop-blur-sm 
+      transform transition-all duration-300 lg:hover:scale-105 lg:hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] animate-on-scroll cursor-pointer
       border border-white/10 hover:border-white/20"
     >
-      <div className="relative w-20 h-20 md:w-24 md:h-24 group-hover:animate-float">
+      <div className="relative w-20 h-20 md:w-24 md:h-24 lg:group-hover:animate-float">
         <img
           src={image}
           alt={title}
