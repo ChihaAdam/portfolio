@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap");
+@import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -9,17 +9,6 @@
     opacity: 0;
   }
   to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-50%) scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0) scale(1);
     opacity: 1;
   }
 }
@@ -48,12 +37,15 @@
 @layer base {
   body {
     @apply bg-[#0d1117] text-[#c9d1d9];
-    font-family: 'DynaPuff', cursive;
+    font-family: "DynaPuff", cursive;
+  }
+  html {
+    scroll-behavior: smooth;
   }
 }
 
-@layer utilities{
-  .text-gradiant{
+@layer utilities {
+  .text-gradiant {
     @apply bg-clip-text p-4 text-transparent bg-gradient-to-r from-[#ff0080] via-[#7928ca] to-[#007cf0];
   }
   .fade-in {
@@ -62,14 +54,8 @@
   .link {
     @apply hover:text-[#ff0080] transition-colors duration-300 cursor-pointer select-none;
   }
-  .icon{
-    @apply w-6 h-6 text-gray-950 not-hover:opacity-50 transition-opacity duration-300 ease-in-out
-  }
-  .animate-on-scroll {
-    opacity: 0;
-    animation: slideIn 1s linear forwards;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+  .icon {
+    @apply w-6 h-6 text-gray-950 not-hover:opacity-50 transition-opacity duration-300 ease-in-out;
   }
   .animate-float {
     animation: float 3s ease-in-out infinite;

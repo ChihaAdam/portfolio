@@ -1,7 +1,7 @@
-import Nav from "./components/Nav";
-import Main from "./components/Main";
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import Loading from "./components/loading";
+const Nav = lazy(() => import("./components/Nav"));
+const Main = lazy(() => import("./components/Main"));
 
 function App() {
   return (

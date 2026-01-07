@@ -1,4 +1,4 @@
-function Avatar({ link }: { link: string }) {
+function Avatar({ link }: { link: Readonly<string> }) {
   return (
     <>
       <div className="border-3 border-red-600 rounded-full aspect-square  w-36 h-36 flex justify-center items-center relative">

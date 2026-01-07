@@ -1,13 +1,16 @@
-type ProjectDetailsProps = {
+export interface ProjectDetails {
   title: string;
   description: string;
   demo: string;
   repository: string;
   snapshot: string;
-};
-function ProjectCard({ data }: { data: ProjectDetailsProps }) {
+}
+interface ProjectCardProps {
+  data: ProjectDetails;
+}
+function ProjectCard({ data }: Readonly<ProjectCardProps>) {
   return (
-    <div className="flex flex-col items-center justify-between animate-on-scroll hover:scale-105 transition-all duration-300 cursor-pointer bg-gray-800 rounded-lg p-4 shadow-lg hover:shadow-xl">
+    <div className="flex flex-col items-center justify-between md:hover:scale-105 transition-all duration-300 cursor-pointer bg-gray-800 rounded-lg p-4 md:shadow-lg md:hover:shadow-xl">
       <div className="flex flex-col gap-2">
         <img
           src={data.snapshot}

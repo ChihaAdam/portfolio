@@ -5,7 +5,7 @@ interface IntroProps {
   avatar: string;
   public_repos: number;
 }
-function Intro({ bio, avatar, public_repos }: IntroProps) {
+function Intro({ bio, avatar, public_repos }: Readonly<IntroProps>) {
   return (
     <div
       id="home"
