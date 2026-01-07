@@ -1,4 +1,8 @@
-function Avatar({ link }: { link: Readonly<string> }) {
+interface AvatarProps {
+  link: string;
+}
+
+function Avatar({ link }: Readonly<AvatarProps>) {
   return (
     <div className="border-3 border-red-600 rounded-full aspect-square  w-36 h-36 flex justify-center items-center relative">
       <img src={link} className="rounded-full" alt="Avatar" loading="lazy" />
