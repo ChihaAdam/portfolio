@@ -1,24 +1,34 @@
-export const FetchGithub = Promise.all([
-  fetch("https://api.github.com/users/chihaadam"),
-  fetch("https://api.github.com/users/chihaadam/starred")
-]).then(async ([userResponse, starredResponse]) => {
-  if (!userResponse.ok || !starredResponse.ok) {
-    throw new Error("Network response was not ok");
+export interface FetchGithubResponse {
+  avatar_url: string;
+  bio: string;
+  public_repos: number;
+  total_stars: number;
+}
+export type FetchGithubResponsePromise = Promise<FetchGithubResponse>;
+
+export const FetchGithub: () => FetchGithubResponsePromise = async () => {
+  try {
+    const response = await Promise.all([
+      fetch("https://api.github.com/users/chihaadam"),
+      fetch("https://api.github.com/users/chihaadam/starred"),
+    ]);
+    const [userResponse, starredResponse] = response;
+    if (!userResponse.ok || !starredResponse.ok) {
+      throw new Error("Network response was not ok");
+    }
+    const userData = await userResponse.json();
+    const starredRepos = await starredResponse.json();
+    return {
+      ...userData,
+      total_stars: starredRepos.length,
+    };
+  } catch (err) {
+    console.log(err);
+    return {
+      avatar_url: "",
+      bio: "",
+      public_repos: 0,
+      total_stars: 0,
+    };
   }
-  
-  const userData = await userResponse.json();
-  const starredRepos = await starredResponse.json();
-  
-  return {
-    ...userData,
-    total_stars: starredRepos.length
-  };
-}).catch((error) => {
-  console.error("Error fetching GitHub data:", error);
-  return {
-    avatar_url: "",
-    bio: "",
-    public_repos: 0,
-    total_stars: 0 
-  };
-});
+};

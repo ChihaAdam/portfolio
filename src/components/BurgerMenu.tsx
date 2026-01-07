@@ -13,9 +13,9 @@ function BurgerMenu() {
         <MenuIcon size={30} />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="bg-gray-800 md:hidden border-1 border-white/40">
-        {links.map((item, index) => (
+        {links.map((item) => (
           <DropdownMenuItem
-            key={index}
+            key={item}
             className="focus:bg-transparent active:bg-gray-300/20"
           >
             <a
