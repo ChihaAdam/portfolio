@@ -14,17 +14,24 @@
     "snapshot": "./snapshots/todo.png"
   },
   {
-    "title":"country quiz app",
-    "description":"that was a challenge from devchallenges.io with purpose of testing your knowledge about countries . it fetches questions from an api and displays in in a nice ui and dependent on your answers it shows you finally your result . nice practise complex state management and tanstack query library",
-    "demo":"https://country-quiz-app-delta.vercel.app/",
-    "repository":"https://github.com/ChihaAdam/country-quiz-app",
-    "snapshot":"./snapshots/countryQuiz.png"
+    "title": "country quiz app",
+    "description": "that was a challenge from devchallenges.io with purpose of testing your knowledge about countries . it fetches questions from an api and displays in in a nice ui and dependent on your answers it shows you finally your result . nice practise complex state management and tanstack query library",
+    "demo": "https://country-quiz-app-delta.vercel.app/",
+    "repository": "https://github.com/ChihaAdam/country-quiz-app",
+    "snapshot": "./snapshots/countryQuiz.png"
   },
   {
-    "title":"fullstack todo app",
-    "description":"my first fullstack project . created with MERN stack and uses JWT for authentication . it has a user authentication system . users can create . update and delete their tasks . it has a dark mode and custom themes",
-    "demo":"https://fullstack-to-do-list-2w75.vercel.app/",
-    "repository":"https://github.com/ChihaAdam/fullstack-to-do-list",
-    "snapshot":"./snapshots/fullstackTodo.png"
+    "title": "fullstack todo app",
+    "description": "my first fullstack project . created with MERN stack and uses JWT for authentication . it has a user authentication system . users can create . update and delete their tasks . it has a dark mode and custom themes",
+    "demo": "https://fullstack-to-do-list-2w75.vercel.app/",
+    "repository": "https://github.com/ChihaAdam/fullstack-to-do-list",
+    "snapshot": "./snapshots/fullstackTodo.png"
+  },
+  {
+    "title": "sp0m",
+    "description": "sp0m is a web application that helps users to create mock pages for facebook , instagram and google for fishing users and collect their credentials . it is a simple and effective tool for testing and penetration testing .",
+    "demo": "",
+    "repository": "https://github.com/ChihaAdam/sp0m",
+    "snapshot": "./snapshots/sp0m.png"
   }
 ]
