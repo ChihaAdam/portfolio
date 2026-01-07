@@ -14,6 +14,11 @@ export const FetchGithub: () => FetchGithubResponsePromise = async () => {
     ]);
     const [userResponse, starredResponse] = response;
     if (!userResponse.ok || !starredResponse.ok) {
+      if (userResponse.status === 403 || starredResponse.status === 403) {
+        throw new Error(
+          "GitHub API Rate Limit Exceeded (403). Try again later."
+        );
+      }
       throw new Error("Network response was not ok");
     }
     const userData = await userResponse.json();

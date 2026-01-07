@@ -7,8 +7,9 @@ import {
   type FetchGithubResponsePromise,
 } from "./utils/FetchGithub";
 
+const fetchGithubPromise: FetchGithubResponsePromise = FetchGithub();
+
 function App() {
-  const fetchGithubPromise: FetchGithubResponsePromise = FetchGithub();
   return (
     <Suspense fallback={<Loading />}>
       <Nav />
